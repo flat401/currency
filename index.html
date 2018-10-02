@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html dir='ltr' lang='en'>
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126823861-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126823861-1');
+  </script>
   <title>Flat Currency</title>
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
@@ -8,8 +17,9 @@
   <meta property='og:title' content='Flat Currency' />
   <meta property='og:description' content='A powerful yet simple currency calculator.' />
   <meta property='og:image' content='https://flat401.github.io/currency/img/og.jpg' />  
-	<meta name='keywords' content='flat currency, currency, currency calculator, exchage, exchage rate, USD, KRW, EUR, THB, SGD, GBP, JPY'>
-	<meta name='description' content='{{ A powerful yet simple currency calculator. }}'>
+  <meta name='keywords' content='flat currency, currency, currency calculator, exchage, exchage rate, USD, KRW, EUR, THB, SGD, GBP, JPY'>
+  <meta name='description' content='{{ A powerful yet simple currency calculator. }}'>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
   <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO' crossorigin='anonymous'>
   <style>
     @media (min-width: 992px) {
@@ -18,30 +28,52 @@
     @media (min-width: 1200px) {
       .container{width: 500px}
     }
+    body {
+      font-family: 'PT Sans', sans-serif;
+    }
     .container {
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
       padding-bottom: 62px;
     }
-    .store {
-      float:none;
-      display:inline-block;
-      vertical-align:middle;
-    }
   </style>
 </head>
 <body>
 <div class='container'>
-  <img src='img/headline.png' class='img-fluid headline' />
-  <center>
+  <!-- <img src='img/headline.png' class='img-fluid headline' /> -->
+  <img src='img/screenshot.png' class='img-fluid' />
+  <h1 class='display-4' style='margin-left: 46px; margin-top: 20px; font-size: 3.6rem; font-weight: 700;'>
+    Flat Currency
+  </h1>
+  <p style='margin-left: 50px; margin-top: -14px'>
+    Currency Calculator
+  </p>
+  <p style='margin-left: 50px; margin-top: 120px; border-bottom: 2px solid #000; display: inline-block;'>
+    <b>Features</b>
+  </p>
+  <p style='margin-left: 50px; margin-top: -10px''>
+    Support all major currencies <br/>
+    Automatically update the exchange rates <br/>
+    Calculate with built-in calculator <br/>
+    Find nearby ATMs and Currency exchange stores <br/>
+    Automatically set local currency <br/>
+    Convert instantaneity <br/>
+    Historical rate charts <br/>
+    Work offline
+  </p>
+
+  <center style='margin-top: 120px'>
     <a href=''>
       <img src='img/ios.png' width='24px'/>
     </a>
     <a href='https://play.google.com/store/apps/details?id=com.flat401.currency'>
       <img src='img/android.png' width='24px' style='margin-left: 40px'/>
     </a>
-    <img src='img/download.png' class='img-fluid' style='margin-top: 20px'/>
+    <p style='margin-top: 20px'>
+      Download on the <br/> App Store and Google Play
+    </p>
+    <!-- <img src='img/download.png' class='img-fluid' style='margin-top: 20px'/> -->
   </center>
 </div>
 </htm>
